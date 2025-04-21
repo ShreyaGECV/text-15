@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Array Programs</title>
+  <style>
+  body{
+  background-color:#213448;
+  }
+    .code-output {
+      background-color: #f0f8ff; /* Light blue background */
+      padding: 10px;
+      border-radius: 8px;
+      font-family: monospace;
+      margin-top: 20px;
+	  text-align:center;
+    }
+	h2{
+	text-align:center;
+	color:#F5C45E;
+	}
+  </style>
+</head>
+<body>
+
+  <h2>JavaScript Array Programs</h2>
+  <div class="code-output" id="output"></div>
+
+  <script>
+    let output = "";
+
+    // 1. Sort a JavaScript Array
+    const arr1 = [9, 3, 7, 1, 5];
+    arr1.sort((a, b) => a - b);
+    output += "1. Sorted Array: " + arr1 + "<br><br>";
+
+    // 2. Concatenate Two Arrays and Store in New Array
+    const arr2 = [1, 2, 3];
+    const arr3 = [4, 5, 6];
+    const newArr = arr2.concat(arr3);
+    output += "2. Concatenated Array: " + newArr + "<br><br>";
+
+    // 3. Remove First Element from JavaScript Array
+    const arr4 = [10, 20, 30, 40];
+    arr4.shift();
+    output += "3. After Removing First Element: " + arr4 + "<br>";
+
+    document.getElementById("output").innerHTML = output;
+  </script>
+
+</body>
+</html>
